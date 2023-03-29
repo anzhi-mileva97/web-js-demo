@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Underscore.js и jQuery пример</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.13.1/underscore-min.js"></script>
+</head>
+<body>
+
+<input type="text" id="input1" value="Hello">
+<input type="text" id="input2" value="World">
+
+<script>
+    $(document).ready(function () {
+        var inputs = $('input'); // намираме всички input елементи с помощта на jQuery
+        var inputValues = _.map(inputs, function (input) {
+            return $(input).val();
+        }); // използваме Underscore.js функцията map за да извадим стойностите на всички елементи
+        console.log(inputValues); // ["Hello", "World"]
+    });
+</script>
+
+</body>
+</html>
