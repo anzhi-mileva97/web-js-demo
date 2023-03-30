@@ -10,7 +10,7 @@ const result = _.chain([1, 2, 3, 4])
         return num * 2;
     })
     .take(2)
-    ;
+;
 
 console.log(result);
 console.log(result.value());

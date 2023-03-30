@@ -5,7 +5,7 @@ Lodash:
  */
 const longString = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
 
-const lodash_string = _.truncate(longString, { length: 20 });
+const lodash_string = _.truncate(longString, {length: 20});
 
 console.log(lodash_string);
 
